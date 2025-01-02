@@ -1,0 +1,304 @@
+.rock-salt-regular {
+  font-family: "Rock Salt", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.gruppo-regular {
+  font-family: "Gruppo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-sans {
+  font-family: "Merriweather Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body {
+  /* font-family: Arial, sans-serif; */
+  line-height: 1.6;
+  background-color: #a7a7b7ae;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  position: center;
+  /* padding: 1rem 2rem 0; */
+  /* box-shadow: black 2rem 0 1rem; */
+  /* border-radius: 5%; */
+  width: 100%;
+  height: 300px;
+  background-color: #f4f4f9;
+  overflow: hidden;
+}
+
+/* Estilizando o header com a imagem de fundo */
+header {
+  position:relative;
+  color: #fff;
+  padding: 10rem 2rem 0;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+
+/* Estilo para o título (h1) */
+header h1 {
+  font-family: "Rock Salt", serif;
+  /* font-family: "Merriweather Sans", serif; */
+  font-size: 3rem;
+  text-shadow: black 2px 3px 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 10;
+}
+
+/* Estilizando a navegação (nav) */
+nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  font-family: "Gruppo", serif;
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: black 2px 2px 2px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+main section {
+    font-family: "Gruppo", serif;
+    padding: 2rem;
+    text-align: center;
+  }
+
+
+
+/* Estilo para a imagem do clima no header */
+/* #weather-header-image-container {
+  margin-top: 1rem;
+  display: inline-block;
+} */
+
+/* #header-weather-image {
+  width: 1000px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 10px;
+}   */
+
+
+
+/* Estilizar o círculo da temperatura */
+.circle {
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  /* background-color: #fffefe86;   */
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+}
+
+/* .circle img {
+  position: static;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+
+} */
+
+#circle-icon {
+  position: absolute;  /* Posiciona a imagem dentro do círculo */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;   /* Faz a imagem preencher 100% da largura do círculo */
+  height: 100%;  /* Faz a imagem preencher 100% da altura do círculo */
+  object-fit: cover; /* Faz a imagem se ajustar ao tamanho do círculo sem distorção */
+  z-index: -1;  /* Coloca a imagem atrás do conteúdo do círculo */
+}
+
+/* #temp-main {
+  z-index: 1;
+  font-family: "Gruppo", serif;
+  font-size: 7.5rem;
+  font-weight: bold;
+  text-shadow: #333 4px 4px 0px;
+  margin: 0;
+} */
+
+/* .weather-widget p {
+  margin: 10px 0;
+  box-shadow: 2px 2px 50px;
+} */
+
+
+#temp-main {
+  /* z-index: -1; */
+  font-family: "Gruppo", serif;
+  font-size: 7.5rem;
+  font-weight: bold;
+  text-shadow: #110f0f 5px 5px 10px;
+  margin:0;
+}
+
+#current-date{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#current-time {
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+#condition{
+  font-size: 1.8rem;
+}
+
+#humidity{
+  font-size: 1.5rem;
+}
+
+/* .temp-icon {
+  display: flex;
+  align-items: end;
+  gap: 800px;
+} */
+
+#map{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#shelter{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.info{
+  font-size: 1.2rem;
+}
+
+#weather-icon {
+  width: 70px;
+  height: 70px;
+}
+
+
+button#update-weather {
+  font-family: "Gruppo", serif;
+  font-size: 1.1rem;
+  margin-top: 2px;
+  padding: 1px 2px;
+  background-color: #b3bac2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+button#update-weather:hover {
+  background-color:rgb(58, 56, 56);
+}
+
+
+#map-container {
+  background-color: #d3d3d3;
+  height: 600px;
+  margin-top: 1rem;
+  border: 2px dashed #bbb;
+  box-shadow: 2px 2px 20px;
+  
+}
+
+
+footer {
+  font-family: "Gruppo", serif;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+
+
+/* Alerta de tempestade */
+.alert {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+  display: none;
+}
+
+.alert.visible {
+  display: block;
+}
+
+.alert.hidden {
+  display: none;
+}
+
+
+

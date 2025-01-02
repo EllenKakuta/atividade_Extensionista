@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+
+    <title>Vibe do Tempo</title>
+</head>
+<body>
+  <div class="header-container">
+    <header>
+      <h1>Vibe do Tempo - Juiz de Fora</h1>
+      <nav>
+        <ul>
+          <li><a href="#weather">Previsão do Tempo</a></li>
+          <li><a href="#map">Mapa de Locais Alagados</a></li>
+          <li><a href="#info">Abrigo e Doações</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>    
+    
+      <main>
+        <section id="weather">
+          <!-- <h2>Previsão do Tempo</h2> -->
+          <p id="current-date">--</p>
+          <p id="current-time">--</p>
+          <div class="weather-widget">
+            <div class="circle" id="temp-container">
+              <img id="circle-icon" class="circle-icon" src="" alt="Ícone do clima" />
+              <span id="temp-main">--°C</span>
+              <img id="weather-icon" class="weather-icon" src="" alt="Ícone do clima" />
+            </div>
+          
+            <p id="condition">Condição: --</p>
+            <p id="humidity">Umidade: --%</p>
+            <button id="update-weather">Atualizar</button>
+          </div>
+        </section>
+        
+    
+        <section id="map">
+          <h2>Mapa de Locais Alagados</h2>
+          <div id="map-container"></div>
+        </section>
+    
+        <section id="info">
+          <h2 id="shelter">Abrigo e Doações</h2>
+          <p class="info"><a href="#a1"></a>Projeto Fênix - Av Governador Valadares, 823 - Manoel Honório  <a href="https://www.instagram.com/institutofenixjf/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png" alt="Instagram" width="20" height="20">
+          </a></p>
+          <p class="info"><a href="#a2"></a>Casa de Passagem para Homens -  Rua Professor Oswaldo Veloso nº 190 - <strong> Tel.: </strong> (32) 3690-7540  <a href="mailto:casadepassagemparahomem@gmail.com" target="_blank"><img src="images/o-email.png.crdownload" alt="email" widht="15" height="25"></a></p>
+          <p class="info"><a href="#a3"></a>Casa de Passagem Mista 1 - Rua  Professor Elias José Feres nº 15 – Santa Tereza - <strong> Tel.: </strong>(32) 3692-8220 <a href="mailto:casadepassagemmista1@gmail.com" target="_blank"><img src="images/o-email.png.crdownload" alt="email" widht="15" height="25"></a><</p>
+          <p class="info"><a href="#a4"></a>Casa de Passagem Mista 2 - Rua  31 de Maio nº 214 e 216 – Ladeira -  <strong> Tel.: </strong> (32) 3690-8219 <a href="mailto:casadepassagemmista2@gmail.com" target="_blank"><img src="images/o-email.png.crdownload" alt="email" widht="15" height="25"></a></p>  
+          <p class="info"><a href="#a5"></a>Núcleo do cidadão de rua - Rua José Calil Ahouagi, 532-646 - Centro - <strong> Tel.: </strong>  (31) 99684-5024 </p>      
+        </section>
+
+        <!-- Alerta de tempestade -->
+        <div id="storm-alert" class="alert hidden">
+          ⚠️ Alerta de tempestade! Evite áreas alagadas e procure abrigo seguro.
+      </div>
+      
+      </main>
+    
+      <footer>
+        <p>© 2025 Ellen Kakuta - Todos os direitos reservados.</p>
+      </footer>
+    </body>
+    <script src="script.js"></script>
+</html>

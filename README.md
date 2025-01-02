@@ -1,0 +1,2 @@
+Projeto de finalização do curso de análise e desenvolvimento de sistemas, que consta num site simples de consulta do tempo, onde é possível identificar em tempo real possíveis alertas de tempestade e locais alagados.
+Inicialmente é voltado para cidade de Juiz de Fora-MG, porém pretendo implementar aos poucos as demais cidades brasileiras, dando também a possibilidade da criação de usuário e seleção da cidade desejada
